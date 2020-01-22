@@ -1,0 +1,67 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Pearl Jean</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="pFav.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- <div id="masthead"> -->
+    <div class="container">
+        <a href="index.html" id="nameLogo">Pearl Jean</a>
+    </div>
+    <!-- </div> -->
+    <br>
+    <br><br>
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">$ ls</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" class="menu" placeholder="Search Repo Names" id="myInput" onkeyup="filterFunction()">
+            <a target="_blank" href="https://swanlake7.github.io/unit-4-game/">$ cd Crystal Collector Game </a>
+            <a target="_blank" href="https://echo-dave.github.io/LoCo/">$ cd LoCo App</a>
+            <a target="_blank" href="https://swanlake7.github.io/liri-node-app/">$ cd Liri Node App</a>
+            <a target="_blank" href="https://github.com/swanlake7/Friend-Finder">$ cd Friend Finder</a>
+            <a target="_blank" href="">$ cd Bamazon</a>
+            <a target="_blank" href="https://feeling-the-food.herokuapp.com/">$ cd Feeling the Food App</a>
+            <a target="_blank" href="">$ cd Scaper</a>
+            <a target="_blank" href="">$ cd Clicky Game</a>
+            <a target="_blank" href="https://gatahabit.herokuapp.com/">$ cd GATA App MVP</a>
+        </div>
+    </div>
+
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
