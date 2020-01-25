@@ -71,6 +71,10 @@ body {
     /* width: 40%; */
     
   }
+  
+.alink {
+  text-decoration: none;
+}
 
   .dropbtn:hover,
   .dropbtn:focus {
