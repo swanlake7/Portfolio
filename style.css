@@ -15,11 +15,11 @@ body {
 
 
 #headshot {
-
+display: flex;
   border-radius: 80%;
-  width: 80px;
+  width: 100px;
   padding-top: 40px;
- 
+justify-items: left;
 }
 
   
@@ -67,25 +67,6 @@ body {
     /* background: #4aaaa5; */
     background: black;
   }
-  
-
-.contact {
-    float: left;
-    width: 250px;
-    height: 90px;
-    /* font-family: Georgia, Times, "Times New Roman", serif; */
-    font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    /* background: #4aaaa5; */
-    background: black;
-  
-}
-
 
   .dropbtn {
     background-color: black;
@@ -179,3 +160,11 @@ color: 	#FFC0CB;
   }
 
   
+#contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: palevioletred;
+}
