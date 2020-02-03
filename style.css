@@ -12,6 +12,16 @@ body {
   * {
     box-sizing: border-box;
   }
+
+
+#headshot {
+
+  border-radius: 80%;
+  width: 80px;
+  padding-top: 40px;
+ 
+}
+
   
 #navy{
   font-family: 'Roboto Mono', monospace;
@@ -58,6 +68,25 @@ body {
     background: black;
   }
   
+
+.contact {
+    float: left;
+    width: 250px;
+    height: 90px;
+    /* font-family: Georgia, Times, "Times New Roman", serif; */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    /* background: #4aaaa5; */
+    background: black;
+  
+}
+
+
   .dropbtn {
     background-color: black;
     color: 	#FF6347;
@@ -103,7 +132,7 @@ body {
     outline: 3px solid #ddd;
     font-family: 'Roboto Mono', monospace;
     /* margin-left: 30%; */
-    color: 	#FFC0CB;
+    color: 	purple;
   }
 
   .dropdown {

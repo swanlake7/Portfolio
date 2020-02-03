@@ -1,52 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Pearl Jean</title>
+    <title>Pearl Jean Homepage</title>
     <meta name="viewport" content="width=device-width" />
-    <meta name="description" content="Pearl Jean's Resume" />
+    <meta name="description" content="The Curriculum Vitae of Joe Bloggs." />
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/x-icon" href="pFav.png" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pFav.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="res.css">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body id="top">
+
+
+
+
     <!-- <div id="masthead"> -->
     <div class="container">
         <a href="index.html" id="nameLogo">Pearl Jean</a>
-
     </div>
-    <br><br><br>
-
-    <p class="contact">
-
-        p:
-        e:
-        LinkedIn:
-        Instagram:
-
-    </p>
-
-    <br><br><br>
-    <div>
-        <img id="headshot" src="photoshoot.JPG" alt="Pearl Profile Pic" />
-    </div>
-
-
-
     <!-- </div> -->
     <br>
     <br><br>
 
     <div class="dropdown">
-
         <button class="dropbtn"><a class="dropbtn alink" target="_blank" href="res.html">$ cd Resume</a></button>
         <br><br>
-
-
 
         <button onclick="myFunction()" class="dropbtn">$ ls</button>
         <div id="myDropdown" class="dropdown-content">
@@ -62,7 +42,6 @@
             <a target="_blank" href="https://gatahabit.herokuapp.com/">$ cd GATA App MVP</a>
         </div>
     </div>
-
 
     <script>
         /* When the user clicks on the button,
@@ -86,32 +65,9 @@
                 }
             }
         }
-
-
-
-        function myFunctionO() {
-            document.getElementById("myDropdownO").classList.toggle("showO");
-        }
-
-        function filterFunctionO() {
-            var input, filter, ul, li, a, i;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            div = document.getElementById("myDropdown");
-            a = div.getElementsByTagName("a");
-            for (i = 0; i < a.length; i++) {
-                txtValue = a[i].textContent || a[i].innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    a[i].style.display = "";
-                } else {
-                    a[i].style.display = "none";
-                }
-            }
-        }
-
-
-
     </script>
+
+
 
 
 </body>
