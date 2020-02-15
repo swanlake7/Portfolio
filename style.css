@@ -180,7 +180,9 @@ color: 	#FFC0CB;
 
 
 @media only screen and (max-width: 600px) {
-  
+  #nameLogo
+  #contact
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -196,3 +198,11 @@ color: 	#FFC0CB;
 
 }
 
+/* change font size , change orientation, change which ones are
+ hidden or shown, or change the arrangements  to change orientation:
+      @media only screen and (orientation: landscape) {
+      body {
+        background-color: lightblue;
+    }
+  
+  */
