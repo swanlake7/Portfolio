@@ -133,6 +133,14 @@ justify-items: left;
     color: 	#FFC0CB;
   }
 
+  .projex {
+    position: relative;
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 30%;
+    color: 	#FFC0CB;
+  }
+
   .dropdown-content {
     display: none;
     position: absolute;
