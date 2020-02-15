@@ -1,3 +1,12 @@
+*{
+  box-sizing: border-box;
+}
+
+[class *="col-"] {
+float: left;
+padding: 10px;
+}
+
 body {
 
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -168,3 +177,22 @@ color: 	#FFC0CB;
 #contact a:hover {
   color: palevioletred;
 }
+
+
+@media only screen and (max-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+.col-1 {}
+.col-2 {}
+.col-3 {}
+.col-4 {}
+.col-5 {}
+
+}
+
