@@ -59,12 +59,10 @@
 
     <div class="dropdown">
         <div id="contact">
-            <a href="https://github.com/swanlake7" target="_blank">GATA App &lt;link&gt; </a> <br>
+            <a id="myBtn">GATA App &lt;link&gt; </a> <br>
             <a href="https://github.com/swanlake7" target="_blank">Feeling the Food App &lt;link&gt; </a> <br>
             <a href="https://github.com/swanlake7" target="_blank">LoCo App &lt;link&gt; </a> <br>
-
         </div>
-        <!-- <button class="dropbtn"><a class="dropbtn alink" target="_blank" href="projex.html">$ cd Projects</a></button> -->
     </div>
     <br>
 
@@ -119,7 +117,65 @@
         </p>
     </div> -->
 
+    <!-- The Modal -->
+    <div id="gataM" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>GATA App
+                <ul>
+                    <li>
+                        the Pain:
+                    </li>
+                    <li>
+                        the Solution:
+                    </li>
+                    <li>
+                        Heroku:
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
 
+    <div id="ftf" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+    <div id="locoM" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("gataM");
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        //same for all: open , close, close.
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
